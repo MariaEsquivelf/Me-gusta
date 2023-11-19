@@ -7,12 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav>
         <h1>Dojonary</h1>
         <input type="text" placeholder="Search">
-        <button onclick="estado(this)" bool-log="1">login</button>
+        <button id="log" onclick="estado()" bool-log="1">login</button>
     </nav>
     <div class="contenedor">
         <main>
@@ -22,7 +21,7 @@
                     <p><i>noun</i></p>
                     <p>Plural: ninja</p>
                     
-                    <button  class="like" onclick="like(this)"  cont-likes="0">0 likes</button>
+                    <button  class="like" onclick="like(0)"  cont-likes="0">0 likes</button>
                 </div>
                 <article class="contenido">
                     <p>A practitioner skilled in the<a href="#">Japanese</a>art of<a href="#">ninjutsu</a></p>
@@ -34,7 +33,7 @@
                     <p><i>noun</i></p>
                     <p>Plural: ninja</p>
 
-                    <button class="like" onclick="like(this)"  cont-likes="0">0 likes</button>
+                    <button class="like" onclick="like(1)"  cont-likes="0">0 likes</button>
                 </div>
                 <article class="contenido">
                     <p> A programmer who breaks
@@ -45,7 +44,7 @@
         </main>
         <aside>
                 <p>Dojonary is defined by <strong>You</strong></p>
-                <button onclick="remove(this)">Add Definition</button>
+                <button class="add" onclick="remove()">Add Definition</button>
         </aside>
     </div>
     <script type="text/javascript" src="script.js"></script>
